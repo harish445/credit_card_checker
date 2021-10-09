@@ -47,10 +47,10 @@ const validateCred = array => {
     } else {
       return false
     };
-  };
+};
   //console.log(validateCred(invalid1))
   
-  const findvalidCards = nestarr => {
+const findvalidCards = nestarr => {
     let invalidCards = [];
     for (let k = 0; k < nestarr.length; k++){
       if (validateCred(nestarr[k]) === false){
@@ -59,7 +59,7 @@ const validateCred = array => {
      } return invalidCards;
   }
   
-  const idInvalidCardCompanies = invalid => {
+const idInvalidCardCompanies = invalid => {
     let companies = [];
     for (let l = 0; l < invalid.length; l++){
       let firstDigit = invalid[l][0];
